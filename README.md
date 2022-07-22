@@ -1,1 +1,119 @@
 # webtools-ip-location
+
+This is an wrapper app for getting geo-ip data from a geo-ip provider.
+
+Click on the downloaded Lombok-{version}.jar and select your IDE to install lombok
+Restart the IDE after successful Lombok installation
+
+### Pre-commit checks
+
+In Windows run
+
+```
+mvnw.cmd clean verify
+```
+
+In Linux/MacOs run
+
+```
+./mvnw clean verify
+```
+
+This should build and run all the tests in the same way as on the continuous integration server.  If the build is successful, you can commit to git and push to Git.
+
+### Run the app
+
+In Windows run
+
+```
+cd /path/of/the/project/
+mvnw.cmd clean package
+java -jar target/*.jar
+```
+In Linux/MacOs run
+
+```
+cd /path/of/the/project/
+./mvnw clean package
+java -jar target/*.jar
+```
+
+## Smoke test services
+
+There is a `/health` endpoint that provides basic information about the application’s health:
+
+```
+curl http://localhost:8080/actuator/health
+```
+
+The endpoint should display the following -
+
+```
+{
+    "status": "UP"
+}
+```
+
+The status will be UP as long as the application is healthy. It will show DOWN if the application gets 
+unhealthy due to any issue like connectivity with the database or lack of disk space etc. 
+
+The build and version information can be checked by calling the `/info` endpoint.  This allows checking of the git tags, maven version, build date etc.
+
+```
+curl http://localhost:8080/actuator/info
+```
+
+This endpoint will return something like the following.
+
+```
+{  
+   "git":{  
+      "commit":{  
+         "time":"2019-09-03T09:31:57Z",
+         "id":{  
+            "abbrev":"f15f444"
+         },
+         "user":{  
+            "email":"ikoyski@IKOYSKI-PC-01",
+            "name":"ikoyski"
+         },
+         "message":{  
+            "short":"initial commit for the server component"
+         }
+      },
+      "dirty":"t",
+      "build":{  
+         "host":"IKOYSKI-PC-01"
+      },
+      "branch":"master",
+      "tags":""
+   }
+}
+```
+
+Hit the functional endpoint (**Server**)
+
+```
+curl --location --request GET 'http://localhost:8080/api/v1/ipLocation/8.8.8.8'
+```
+
+This should return something like
+
+```
+{
+    "query": "8.8.8.8",
+    "status": "success",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "VA",
+    "regionName": "Virginia",
+    "city": "Ashburn",
+    "zip": "20149",
+    "lat": "39.03",
+    "lon": "-77.5",
+    "timezone": "America/New_York",
+    "isp": "Google LLC",
+    "org": "Google Public DNS",
+    "as": "AS15169 Google LLC"
+}
+```
