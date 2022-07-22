@@ -15,6 +15,7 @@
   <description>webtools-ip-location</description>
   <scm>
     <developerConnection>scm:git:ikoyski@github.com:ikoyski/webtools-ip-location.git</developerConnection>
+    <url>https://github.com/ikoyski/webtools-ip-location.git</url>
     <tag>HEAD</tag>
   </scm>
   <properties>
