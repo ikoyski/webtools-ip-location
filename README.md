@@ -66,28 +66,13 @@ curl http://localhost:8080/actuator/info
 This endpoint will return something like the following.
 
 ```
-{  
-   "git":{  
-      "commit":{  
-         "time":"2019-09-03T09:31:57Z",
-         "id":{  
-            "abbrev":"f15f444"
-         },
-         "user":{  
-            "email":"ikoyski@IKOYSKI-PC-01",
-            "name":"ikoyski"
-         },
-         "message":{  
-            "short":"initial commit for the server component"
-         }
-      },
-      "dirty":"t",
-      "build":{  
-         "host":"IKOYSKI-PC-01"
-      },
-      "branch":"master",
-      "tags":""
-   }
+{
+  "git": {
+    "commit": {
+      "id": "2028dd7a66f135d2fdb557e03349cc982053f9bd"
+    },
+    "branch": "master"
+  }
 }
 ```
 
