@@ -4,16 +4,17 @@ public class IpLocationProviderFactory {
 
 	public static final String PROVIDER_IPAPI = "IpApi";
 
+	private IpLocationProviderFactory() {
+		super();
+	}
+
 	public static IpLocationProviderBaseInterface createIpLocationProvider(String type) {
 		IpLocationProviderBaseInterface ipLocationProvider;
-		switch (type) {
-		case PROVIDER_IPAPI:
+		if (PROVIDER_IPAPI.equals(type)) {
 			// using https://ip-api.com/
-			ipLocationProvider = new IpLocationProvider_IpApi();
-			break;
-		default:
+			ipLocationProvider = new IpLocationProviderIpApi();
+		} else {
 			throw new IllegalArgumentException("No such provider.");
-
 		}
 		return ipLocationProvider;
 	}
