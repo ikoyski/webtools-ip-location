@@ -1,4 +1,4 @@
-# webtools-ip-location 
+# webtools-ip-location
 
 This is an wrapper app for getting geo-ip data from a geo-ip provider.
 
