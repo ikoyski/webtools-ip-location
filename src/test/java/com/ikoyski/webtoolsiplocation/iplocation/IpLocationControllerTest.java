@@ -12,7 +12,7 @@ import com.ikoyski.webtoolsiplocation.controller.IpLocationController;
 import com.ikoyski.webtoolsiplocation.service.IpLocationService;
 
 @SpringBootTest
-public class IpLocationControllerTest {
+class IpLocationControllerTest {
 
 	@Autowired
 	private IpLocationController ipLocationController;

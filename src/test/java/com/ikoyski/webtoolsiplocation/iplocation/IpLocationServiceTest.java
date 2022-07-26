@@ -14,7 +14,7 @@ import com.ikoyski.webtoolsiplocation.provider.IpLocationProviderBaseInterface;
 import com.ikoyski.webtoolsiplocation.service.IpLocationService;
 
 @SpringBootTest
-public class IpLocationServiceTest {
+class IpLocationServiceTest {
 
 	@Autowired
 	private IpLocationService ipLocationpService;
