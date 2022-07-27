@@ -10,7 +10,8 @@ import com.ikoyski.webtoolsiplocation.provider.IpLocationProviderFactory;
 public class IpLocationService {
 
 	public IpLocationResponse getIpLocation(String ip) {
-		IpLocationProviderBaseInterface ipLocationProvider = IpLocationProviderFactory
+		IpLocationProviderFactory ipLocationProviderFactory = new IpLocationProviderFactory();
+		IpLocationProviderBaseInterface ipLocationProvider = ipLocationProviderFactory
 				.createIpLocationProvider(IpLocationProviderFactory.PROVIDER_IPAPI);
 		return ipLocationProvider.getIpLocation(ip);
 	}

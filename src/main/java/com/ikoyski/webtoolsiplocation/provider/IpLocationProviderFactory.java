@@ -4,11 +4,7 @@ public class IpLocationProviderFactory {
 
 	public static final String PROVIDER_IPAPI = "IpApi";
 
-	private IpLocationProviderFactory() {
-		super();
-	}
-
-	public static IpLocationProviderBaseInterface createIpLocationProvider(String type) {
+	public IpLocationProviderBaseInterface createIpLocationProvider(String type) {
 		IpLocationProviderBaseInterface ipLocationProvider;
 		if (PROVIDER_IPAPI.equals(type)) {
 			// using https://ip-api.com/
