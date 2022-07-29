@@ -102,3 +102,15 @@ This should return something like
     "as": "AS15169 Google LLC"
 }
 ```
+
+## Configuration file
+
+application.properties
+
+## Swagger / Open API
+
+openapi.yml
+
+## Sonarcloud.io
+
+https://sonarcloud.io/summary/overall?id=ikoyski_webtools-ip-location
