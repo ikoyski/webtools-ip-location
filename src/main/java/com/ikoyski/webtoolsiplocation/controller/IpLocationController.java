@@ -1,5 +1,6 @@
 package com.ikoyski.webtoolsiplocation.controller;
 
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,7 @@ public class IpLocationController {
 	}
 
 	@GetMapping(path = "api/v1/ipLocation/{ip}")
+	@Cacheable(value = "ipLocation", key = "#ip")
 	public IpLocationResponse getIpLocation(@PathVariable("ip") String ip) {
 		return ipLocationService.getIpLocation(ip);
 	}
