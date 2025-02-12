@@ -76,10 +76,16 @@ This endpoint will return something like the following.
 }
 ```
 
-Hit the functional endpoint (**Server**)
+Hit the functional endpoint (**localhost**)
 
 ```
 curl --location --request GET 'http://localhost:8080/api/v1/ipLocation/8.8.8.8'
+```
+
+Hit the functional endpoint (**render**)
+
+```
+curl --location --request GET 'https://webtools-ip-location.onrender.com/api/v1/ipLocation/8.8.8.8'
 ```
 
 This should return something like
