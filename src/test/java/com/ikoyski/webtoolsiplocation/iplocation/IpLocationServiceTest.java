@@ -8,12 +8,14 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.ActiveProfiles;
 
 import com.ikoyski.webtoolsiplocation.dto.IpLocationResponse;
 import com.ikoyski.webtoolsiplocation.provider.IpLocationProviderBaseInterface;
 import com.ikoyski.webtoolsiplocation.service.IpLocationService;
 
 @SpringBootTest
+@ActiveProfiles("test")
 class IpLocationServiceTest {
 
 	@Autowired

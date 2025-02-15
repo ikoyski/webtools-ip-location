@@ -1,4 +1,4 @@
-# webtools-ip-location 
+# webtools-ip-location
 
 This is an wrapper app for getting geo-ip data from a geo-ip provider.
 
@@ -43,7 +43,7 @@ java -jar target/*.jar
 There is a `/health` endpoint that provides basic information about the application’s health:
 
 ```
-curl http://localhost:8080/actuator/health
+curl http://localhost:8092/actuator/health
 ```
 
 The endpoint should display the following.
@@ -60,7 +60,7 @@ unhealthy due to any issue like connectivity with the database or lack of disk s
 The build and version information can be checked by calling the `/info` endpoint.  This allows checking of the git tags, maven version, build date etc.
 
 ```
-curl http://localhost:8080/actuator/info
+curl http://localhost:8092/actuator/info
 ```
 
 This endpoint will return something like the following.
@@ -79,7 +79,7 @@ This endpoint will return something like the following.
 Hit the functional endpoint (**localhost**)
 
 ```
-curl --location --request GET 'http://localhost:8080/api/v1/ipLocation/8.8.8.8'
+curl --location --request GET 'http://localhost:8092/api/v1/ipLocation/8.8.8.8'
 ```
 
 Hit the functional endpoint (**render**)
