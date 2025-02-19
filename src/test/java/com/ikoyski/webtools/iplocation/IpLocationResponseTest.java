@@ -1,11 +1,11 @@
-package com.ikoyski.webtoolsiplocation.iplocation;
+package com.ikoyski.webtools.iplocation;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.ikoyski.webtoolsiplocation.dto.IpLocationResponse;
+import com.ikoyski.webtools.iplocation.dto.IpLocationResponse;
 
 @SpringBootTest
 class IpLocationResponseTest {

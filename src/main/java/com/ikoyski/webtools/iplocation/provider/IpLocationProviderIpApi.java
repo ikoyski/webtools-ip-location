@@ -1,4 +1,4 @@
-package com.ikoyski.webtoolsiplocation.provider;
+package com.ikoyski.webtools.iplocation.provider;
 
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -9,7 +9,7 @@ import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.ikoyski.webtoolsiplocation.dto.IpLocationResponse;
+import com.ikoyski.webtools.iplocation.dto.IpLocationResponse;
 
 public class IpLocationProviderIpApi implements IpLocationProviderBaseInterface {
 

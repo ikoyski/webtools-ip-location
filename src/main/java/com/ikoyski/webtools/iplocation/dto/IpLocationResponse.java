@@ -1,4 +1,4 @@
-package com.ikoyski.webtoolsiplocation.dto;
+package com.ikoyski.webtools.iplocation.dto;
 
 public class IpLocationResponse {
 

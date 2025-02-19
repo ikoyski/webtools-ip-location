@@ -1,12 +1,12 @@
-package com.ikoyski.webtoolsiplocation.iplocation;
+package com.ikoyski.webtools.iplocation;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.ikoyski.webtoolsiplocation.provider.IpLocationProviderBaseInterface;
-import com.ikoyski.webtoolsiplocation.provider.IpLocationProviderFactory;
+import com.ikoyski.webtools.iplocation.provider.IpLocationProviderBaseInterface;
+import com.ikoyski.webtools.iplocation.provider.IpLocationProviderFactory;
 
 @SpringBootTest
 class IpLocationProviderFactoryTest {

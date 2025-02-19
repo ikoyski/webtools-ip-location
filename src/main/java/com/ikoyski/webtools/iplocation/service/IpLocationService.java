@@ -1,11 +1,11 @@
-package com.ikoyski.webtoolsiplocation.service;
+package com.ikoyski.webtools.iplocation.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ikoyski.webtoolsiplocation.dto.IpLocationResponse;
-import com.ikoyski.webtoolsiplocation.provider.IpLocationProviderBaseInterface;
-import com.ikoyski.webtoolsiplocation.provider.IpLocationProviderFactory;
+import com.ikoyski.webtools.iplocation.dto.IpLocationResponse;
+import com.ikoyski.webtools.iplocation.provider.IpLocationProviderBaseInterface;
+import com.ikoyski.webtools.iplocation.provider.IpLocationProviderFactory;
 
 @Service
 public class IpLocationService {

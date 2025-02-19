@@ -1,6 +1,6 @@
-package com.ikoyski.webtoolsiplocation.provider;
+package com.ikoyski.webtools.iplocation.provider;
 
-import com.ikoyski.webtoolsiplocation.dto.IpLocationResponse;
+import com.ikoyski.webtools.iplocation.dto.IpLocationResponse;
 
 public interface IpLocationProviderBaseInterface {
 

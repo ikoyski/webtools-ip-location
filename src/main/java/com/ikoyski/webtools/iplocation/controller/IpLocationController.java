@@ -1,12 +1,12 @@
-package com.ikoyski.webtoolsiplocation.controller;
+package com.ikoyski.webtools.iplocation.controller;
 
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ikoyski.webtoolsiplocation.dto.IpLocationResponse;
-import com.ikoyski.webtoolsiplocation.service.IpLocationService;
+import com.ikoyski.webtools.iplocation.dto.IpLocationResponse;
+import com.ikoyski.webtools.iplocation.service.IpLocationService;
 
 @RestController
 public class IpLocationController {

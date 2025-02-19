@@ -1,4 +1,4 @@
-package com.ikoyski.webtoolsiplocation.provider;
+package com.ikoyski.webtools.iplocation.provider;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

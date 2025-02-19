@@ -1,4 +1,4 @@
-package com.ikoyski.webtoolsiplocation.iplocation;
+package com.ikoyski.webtools.iplocation;
 
 import static org.mockito.Mockito.verify;
 
@@ -6,10 +6,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import com.ikoyski.webtoolsiplocation.controller.IpLocationController;
-import com.ikoyski.webtoolsiplocation.service.IpLocationService;
+import com.ikoyski.webtools.iplocation.controller.IpLocationController;
+import com.ikoyski.webtools.iplocation.service.IpLocationService;
 
 @SpringBootTest
 class IpLocationControllerTest {
@@ -17,7 +17,7 @@ class IpLocationControllerTest {
 	@Autowired
 	private IpLocationController ipLocationController;
 
-	@MockBean
+	@MockitoBean
 	private IpLocationService ipLocationService;
 
 	@Test
