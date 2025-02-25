@@ -5,11 +5,13 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 import com.ikoyski.webtools.iplocation.provider.IpLocationProviderBaseInterface;
 import com.ikoyski.webtools.iplocation.provider.IpLocationProviderFactory;
 
 @SpringBootTest
+@ActiveProfiles("test")
 class IpLocationProviderFactoryTest {
 
 	@Autowired
